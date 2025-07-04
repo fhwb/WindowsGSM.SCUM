@@ -71,6 +71,7 @@ namespace WindowsGSM.Plugins
             // Prepare start parameter
             string param = $" {_serverData.ServerParam} ";
             param += $"-port={_serverData.ServerPort} ";
+            param += $"-QueryPort={_serverData.ServerQueryPort} ";
             param += $"-MaxPlayers={_serverData.ServerMaxPlayer} ";
 
             Process p;
